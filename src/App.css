@@ -1,0 +1,59 @@
+.frame {
+  background-color: #c8ece1;
+  border: 4px solid black;
+  border-radius: 32px;
+
+  width: 375px;
+  height: 812px;
+  display: flex;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.button {
+  background-color: #308d8a;
+  margin: auto 8px 16px 8px;
+  padding: 12px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  border-radius: 48px;
+  transition: transform 200ms ease-out;
+  cursor: default;
+}
+
+.button-close {
+  background-color: #308d8a;
+  margin: 16px 8px auto 8px;
+  padding: 12px;
+
+  text-align: center;
+  color: white;
+  border-radius: 48px;
+  transition: transform 200ms ease-out;
+  cursor: default;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button-close:active {
+  transform: scale(0.95);
+}
+
+.popup {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 460px;
+  text-align: center;
+
+  border-radius: 40px 40px 0px 0px;
+
+  bottom: 0;
+
+  transform: translateY(0px);
+}
