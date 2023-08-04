@@ -56,4 +56,5 @@
   bottom: 0;
 
   transform: translateY(0px);
+  z-index: 1;
 }
