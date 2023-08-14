@@ -19,7 +19,7 @@ function App() {
       anime({
         targets: '.popup',
         translateY: '30px',
-        easing: 'spring(0.8, 100, 13, 0)',
+        easing: 'spring(0.5, 100, 11, 0)',
         direction: 'normal',
       });
     }
@@ -28,7 +28,7 @@ function App() {
       anime({
         targets: '.popup',
         translateY: '460px',
-        easing: 'spring(0.5, 100, 50, 0)',
+        easing: 'spring(0.5, 100, 50, 10)',
         direction: 'normal',
       });
     }
