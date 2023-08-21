@@ -5,29 +5,31 @@ import anime from 'animejs';
 function App() {
   const [toggle, setToggle] = useState(false);
 
+  // initial
   useEffect(() => {
     anime({
       targets: '.popup',
-      translateY: '460px',
+      translateY: 460,
       easing: 'linear',
       duration: 0,
     });
   }, []);
 
   useEffect(() => {
+    // Spring in
     if (toggle === true) {
       anime({
         targets: '.popup',
-        translateY: '30px',
+        translateY: 30,
         easing: 'spring(0.5, 100, 11, 0)',
         direction: 'normal',
       });
     }
-
+    // Spring out
     if (toggle === false) {
       anime({
         targets: '.popup',
-        translateY: '460px',
+        translateY: 460,
         easing: 'spring(0.5, 100, 50, 10)',
         direction: 'normal',
       });
